@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7051956560768922038}
+  - component: {fileID: 1749130174}
+  - component: {fileID: 1749130173}
   m_Layer: 0
   m_Name: Tree2x2
   m_TagString: Untagged
@@ -24,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7051956560768922039}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 14.6, z: -50}
+  m_LocalPosition: {x: 0, y: 14.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7051956560636830877}
@@ -32,6 +34,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1749130174
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7051956560768922039}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1749130173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7051956560768922039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ed6ccf4a3f54b4fa4c7775ff7f9811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Costs:
+  - Resource: 0
+    Amount: 50
+  - Resource: 1
+    Amount: 200
+  Name: Tree
+  Size: {x: 2, y: 2}
 --- !u!1 &7051956560903175720
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,6 +167,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7051956560768922038}
     m_Modifications:
+    - target: {fileID: 104966, guid: d0d41b27dd72fc942b10f18f469c371a, type: 3}
+      propertyPath: m_Name
+      value: Tree 2
+      objectReference: {fileID: 0}
     - target: {fileID: 482704, guid: d0d41b27dd72fc942b10f18f469c371a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.3
@@ -160,6 +201,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 482704, guid: d0d41b27dd72fc942b10f18f469c371a, type: 3}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 482704, guid: d0d41b27dd72fc942b10f18f469c371a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 482704, guid: d0d41b27dd72fc942b10f18f469c371a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 482704, guid: d0d41b27dd72fc942b10f18f469c371a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 482704, guid: d0d41b27dd72fc942b10f18f469c371a, type: 3}
